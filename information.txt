@@ -1,0 +1,11 @@
+This is an old photo restoration project made as a part of degree thesis.
+-------------------------------------
+Buttons description:
+
+SELECT IMAGE - opens file explorer. Choose any picture you want to repair. (Note - square like dimensions recommended)
+SAVE IMAGE - Opens file explorer. Saves currently modified picture in a chosen location. If the image was not yet modified it will save earlier chosen image.
+REPAIR - Button is active after picking an image. Repairs visible damages. Works best on tears and scratches.
+IMPROVE - Button is active after repairing an image. Improves contrast and sharpness. Usage is not recommended for already well looking images.
+
+-------------------------------------
+Project works with CycleGAN and Pix2Pix trained models via official Tensorflow implementation. To change used model switch models\model1\model1 file to a different model. Keep the same name. For CycleGAN models uncomment "#FOR CYCLEGAN" block of code in 'image_prediction.py' file, comment "FOR PIX2PIX" and vice versa.
